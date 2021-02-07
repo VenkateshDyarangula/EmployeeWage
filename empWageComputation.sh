@@ -10,6 +10,7 @@ fullDay=8;
 dailyPayment=0;
 fulltime=8;
 parttime=5;
+perMonth=20;
 checkRandom=$((RANDOM%2))
 partFullCheck=$((RANDOM%2))
 if [ $isPresent -eq $checkRandom ]
@@ -17,12 +18,12 @@ then
      echo "Emp is Present"
             #UC-4
       case $partFullCheck in    #(0-FullTime and 1-PartTime)
-            #UC-2
-         0) dailyPayment=$(($wagePerHr*$fulltime))
+            #UC-2 and UC-5
+         0) dailyPayment=$(($wagePerHr*$perMonth*$fulltime))
             echo "Daily Payment is:" $dailyPayment
           ;;
-             #UC3
-         1)  dailyPayment=$(($wagePerHr*$parttime))
+             #UC3 and UC-5
+         1)  dailyPayment=$(($wagePerHr*$perMonth*$parttime))
             echo "Daily Payment is:" $dailyPayment
           ;;
       esac
