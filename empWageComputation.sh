@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-
+#UC-1
 echo "Hello EmpDeatils Program"
 
 isPresent=1;
@@ -14,12 +14,13 @@ partFullCheck=$((RANDOM%2))
 if [ $isPresent -eq $checkRandom ]
 then
      echo "Emp is Present"
-      case $partFullCheck in
-            #0-FullTime
+            #UC-4
+      case $partFullCheck in    #(0-FullTime and 1-PartTime)
+            #UC-2
          0) dailyPayment=$(($wagePerHr*$fulltime))
             echo "Daily Payment is:" $dailyPayment
           ;;     
-             #1-fulltime
+             #UC3
          1)  dailyPayment=$(($wagePerHr*$parttime))
             echo "Daily Payment is:" $dailyPayment
           ;;
