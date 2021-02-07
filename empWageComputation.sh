@@ -17,30 +17,23 @@ then
       #UC-4 
       case $partFullCheck in    #(0-FullTime and 1-PartTime)
             #UC-2 and UC-5
-    
          0)  for (( i=1; i<=$workHrs; i++ ))#UC-6
              do
                    Day=$(($workHrs/$monthDays))
                    dailyPayment=$(($wagePerHr*$i*$Day))
                    echo "Daily Payment of Full Time is:" $dailyPayment
-                  
              done
                 ;;
-
-
              #UC3 and UC-5
          1)  for (( i=1; i<=$workHrs; i++ ))#UC-6
              do
                    Day=$(($workHrs/$monthDays-2))
                    dailyPayment=$(($wagePerHr*$i*$Day))
-                   echo "Daily Payment of Part Time is:" $dailyPayment
-                   
+                   echo "Daily Payment of Part Time is:" $dailyPayment         
              done
                ;;
       esac
-    
 else
     echo "Emp is Absent"
     echo "Daily Payment is:" $dailyPayment
 fi
-
