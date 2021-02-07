@@ -1,5 +1,6 @@
 #!/bin/bash -x
 
+echo "Hello Welcome to EmpDeatils Programe"
 
 isPresent=1; 
 wagePerHr=20; 
