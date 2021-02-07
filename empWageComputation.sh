@@ -1,8 +1,9 @@
 #!/bin/bash -x
 
-#UC-1
-echo "Hello EmpDeatils Program"
 
+#UC-1
+
+echo "Hello Welcome to EmpDeatils Programe"
 isPresent=1;
 wagePerHr=20;
 fullDay=8;
@@ -19,7 +20,7 @@ then
             #UC-2
          0) dailyPayment=$(($wagePerHr*$fulltime))
             echo "Daily Payment is:" $dailyPayment
-          ;;     
+          ;;
              #UC3
          1)  dailyPayment=$(($wagePerHr*$parttime))
             echo "Daily Payment is:" $dailyPayment
@@ -29,3 +30,4 @@ else
     echo "Emp is Absent"
     echo "Daily Payment is:" $dailyPayment
 fi
+
