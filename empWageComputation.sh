@@ -1,6 +1,5 @@
 #!/bin/bash -x
 
-
 isPresent=1; 
 wagePerHr=20; 
 fullDay=8; 
