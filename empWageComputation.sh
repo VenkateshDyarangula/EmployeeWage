@@ -36,7 +36,7 @@ then
                    #echo "Daily Payment of Full Time is:" $dailyPayment
                    storeInArray $dailyPayment
                    totalWage=$(($dailyPayment+$totalWage))
-             done
+             done   #UC-8
                    echo "Daily Wages store in array" [${array[@]}]
                    echo "TotalWage of Full Time is :" $totalWage
                 ;;
@@ -48,7 +48,7 @@ then
                    #echo "Daily Payment of Part Time is:" $dailyPayment         
                    storeInArray $dailyPayment
                    totalWage=$(($dailyPayment+$totalWage))
-             done
+             done     #UC-8
                    echo "Daily Wages store in array" [${array[@]}]
                    echo "TotalWage of Part Time is :" $totalWage
 
