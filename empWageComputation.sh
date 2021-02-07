@@ -16,7 +16,6 @@ partFullCheck=$((RANDOM%2))  #UC-4 (0-FullTime 1-PartTime)
 counter=0;
 storeInArray () {
 value=$1;
-
 if [[ "${array[*]}" != *"$value"* ]]
 then
 array[counter]=$value;
@@ -51,7 +50,6 @@ then
              done     #UC-8
                    echo "Daily Wages store in array" [${array[@]}]
                    echo "TotalWage of Part Time is :" $totalWage
-
                ;;
       esac
 else
