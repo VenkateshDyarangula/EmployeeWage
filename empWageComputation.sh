@@ -1,8 +1,5 @@
 #!/bin/bash -x
-
-
-#UC-1
-
+#UC1
 echo "Hello Welcome to EmpDeatils Programe"
 isPresent=1;
 wagePerHr=20;
@@ -12,8 +9,8 @@ fulltime=8;
 parttime=5;
 perMonth=20;
 checkRandom=$((RANDOM%2))
-partFullCheck=$((RANDOM%2))
-if [ $isPresent -eq $checkRandom ]
+partFullCheck=$((RANDOM%2))  #UC-4 (0-FullTime 1-PartTime)
+if [ $isPresent -eq $checkRandom ]   
 then
      echo "Emp is Present"
             #UC-4
@@ -27,6 +24,7 @@ then
             echo "Daily Payment is:" $dailyPayment
           ;;
       esac
+
 else
     echo "Emp is Absent"
     echo "Daily Payment is:" $dailyPayment
