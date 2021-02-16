@@ -22,7 +22,7 @@ then
           #UC3
          dailyPayment=$(($wagePerHr*$parttime))
             echo "Daily Payment is:" $dailyPayment
-         
+fi         
 else
     echo "Emp is Absent"
     echo "Daily Payment is:" $dailyPayment
